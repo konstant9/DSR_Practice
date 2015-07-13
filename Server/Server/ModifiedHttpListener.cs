@@ -6,7 +6,6 @@ using System.Net;
 using System.Text;
 using System.Threading;
 using Newtonsoft.Json;
-using System.Threading.Tasks;
 
 namespace Server
 {
@@ -51,12 +50,7 @@ namespace Server
                     var dir = new DirectoryInfo(_request.RawUrl.Remove(0, 1));
                     if (dir.Exists)
                     {
-                        var fileSystemInfos = dir.EnumerateFileSystemInfos().Select<FileSystemInfo, FileSystemInfo>(fsi =>
-                        {
-                            if (fsi is DirectoryInfo)
-                                return new DirectoryInfo(fsi.FullName);
-                            return new FileInfo(fsi.FullName);
-                        });
+                        var fileSystemInfos = dir.EnumerateFileSystemInfos();
 
                         outputString = JsonConvert.SerializeObject(fileSystemInfos);
                         var buffer = Encoding.Default.GetBytes(outputString);
