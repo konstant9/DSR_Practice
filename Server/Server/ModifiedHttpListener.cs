@@ -47,12 +47,14 @@ namespace Server
                 var outputString = string.Empty;
                 try
                 {
-                    var dir = new DirectoryInfo(_request.RawUrl.Remove(0, 1));
+                    var dir = new DirectoryInfo(System.Web.HttpUtility.UrlDecode(_request.RawUrl.Remove(0, 1)));
                     if (dir.Exists)
                     {
                         var fileSystemInfos = dir.EnumerateFileSystemInfos();
-
-                        outputString = JsonConvert.SerializeObject(fileSystemInfos);
+                        
+                        outputString = JsonConvert.SerializeObject(fileSystemInfos, new JsonSerializerSettings{
+                                                                                    TypeNameHandling = TypeNameHandling.All
+                                                                                                              });
                         var buffer = Encoding.Default.GetBytes(outputString);
                         _response.ContentLength64 = buffer.Length;
                         using (var output = _response.OutputStream) { output.Write(buffer, 0, buffer.Length); }
@@ -61,7 +63,9 @@ namespace Server
                     }
                     else
                     {
-                        outputString = JsonConvert.SerializeObject("There is no such directory");
+                        outputString = JsonConvert.SerializeObject("Директория отсутствует",new JsonSerializerSettings{
+                                                                                    TypeNameHandling = TypeNameHandling.All
+                                                                                                              });
                         var buffer = Encoding.Default.GetBytes(outputString);
                         _response.ContentLength64 = buffer.Length;
                         using (var output = _response.OutputStream) { output.Write(buffer, 0, buffer.Length); }
@@ -69,7 +73,10 @@ namespace Server
                 }
                 catch (Exception ex)
                 {
-                    outputString = JsonConvert.SerializeObject(ex.Message);
+                    
+                    outputString = JsonConvert.SerializeObject(ex.Message,new JsonSerializerSettings{
+                                                                                    TypeNameHandling = TypeNameHandling.All
+                                                                                                              });
                     var buffer = Encoding.Default.GetBytes(outputString);
                     _response.ContentLength64 = buffer.Length;
                     using (var output = _response.OutputStream) { output.Write(buffer, 0, buffer.Length); }
