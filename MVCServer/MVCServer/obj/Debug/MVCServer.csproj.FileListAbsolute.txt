@@ -1,0 +1,14 @@
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\bin\MVCServer.dll.config
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\bin\MVCServer.dll
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\bin\MVCServer.pdb
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\bin\Newtonsoft.Json.dll
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\bin\System.Net.Http.Formatting.dll
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\bin\System.Web.Http.dll
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\bin\System.Web.Http.WebHost.dll
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\bin\Newtonsoft.Json.xml
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\bin\System.Net.Http.Formatting.xml
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\bin\System.Web.Http.xml
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\bin\System.Web.Http.WebHost.xml
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\obj\Debug\MVCServer.csprojResolveAssemblyReference.cache
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\obj\Debug\MVCServer.dll
+C:\Users\konst_000\Desktop\Project\MVCServer\MVCServer\obj\Debug\MVCServer.pdb
