@@ -257,17 +257,9 @@ namespace Client
                 try
                 {
                     if (directoryListView1.Focused)
-                    {
-                        var th =
-                            new Thread(() => UpdateDirectoryInfo(directoryListView1, pathComboBox1, iconList1, _dir1));
-                        th.Start();
-                    }
+                        UpdateDirectoryInfo(directoryListView1, pathComboBox1, iconList1, _dir1);
                     else
-                    {
-                        var th =
-                            new Thread(() => UpdateDirectoryInfo(directoryListView2, pathComboBox2, iconList2, _dir2));
-                        th.Start();
-                    }
+                        UpdateDirectoryInfo(directoryListView2, pathComboBox2, iconList2, _dir2);
                 }
                 catch (Exception ex)
                 {

@@ -35,3 +35,16 @@ C:\Users\konst_000\Desktop\Project\Client\Client\obj\Debug\Client.Properties.Res
 C:\Users\konst_000\Desktop\Project\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
 C:\Users\konst_000\Desktop\Project\Client\Client\obj\Debug\Client.Form1.resources
 C:\Users\konst_000\Desktop\Project\Client\Client\obj\Debug\Client.Form2.resources
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\bin\Debug\Client.exe.config
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\obj\Debug\Client.exe
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\obj\Debug\Client.pdb
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\bin\Debug\Client.exe
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\bin\Debug\Client.pdb
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\bin\Debug\Newtonsoft.Json.dll
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\bin\Debug\Newtonsoft.Json.xml
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\obj\Debug\Client.Form1.resources
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\obj\Debug\Client.Form2.resources
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\konst_000\Documents\GitHub\DSR_Practice\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
